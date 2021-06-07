@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Table dengan sedikit CSS</title>
+
+    <style>
+        table, th, td{
+            border: 1.5px solid rgb(0, 43, 184);
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 3px
+        }
+  
+    </style>
+
+</head>
+<body>
+    <h3>Membuat Table dengan color-background dan dengan width</h3>
+    <table cellpadding="3" style="background-color:rgb(165, 144, 180); color: rgb(0, 0, 0);">
+        <tr>
+            <th>Nama</th>
+            <td>Ari Pramana</td>
+            <td>Adi Suta</td>
+        </tr>
+        <tr>
+            <th>Umur</th>
+            <td>18 Tahun</td>
+            <td>6 Tahun</td>
+        </tr>
+    </table>
+    <br><br>
+    <table style="background-color: lightyellow;">
+        <caption><strong>Identitas diri</strong></caption>
+        <tr>
+            <th>Nama</th>
+            <th>Domisili</th>
+            <th>Umur</th>
+        </tr>
+        <tr>
+            <td>Ari</td>
+            <td>Bali</td>
+            <td>18 Tahun</td>
+        </tr>
+        <tr>
+            <td>Asep</td>
+            <td>Jakarta</td>
+            <td>20 Tahun</td>
+        </tr>
+    </table>
+    <br><br>
+    <table style="background-color: mediumaquamarine; color:black;">
+        <caption><h3 style="background-color: cornflowerblue;">Membuat Colspan</h3></caption>
+        <tr>
+            <th>Motherboard</th>
+            <th>Processor</th>
+            <th>VGA</th>
+            <th colspan="2">RAM</th>
+        </tr>
+        <tr>
+            <td>Asrock</td>
+            <td>Intel core i7</td>
+            <td>RTX 1300</td>
+            <td>4 GB</td>
+            <td>6 GB</td>
+        </tr>
+    </table>    
+    <br><br>
+    <table>
+        <caption><h3>Membuat Rowspan</h3></caption>
+        <tr>
+            <th>Nama</th>
+            <td>Ari Pramana</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>Jomblo</td>
+        </tr>
+        <tr>
+            <th rowspan="2">telephone</th>
+            <td>085946370867</td>
+        </tr>
+        <tr>
+            <td>089326382929</td>
+        </tr>
+    </table>
+</body>
+</html>
